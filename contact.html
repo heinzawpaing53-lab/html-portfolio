@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact | Hein Zaw Paing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Hein Zaw Paing</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contact">
+    <section class="contact-intro">
+        <h2>Contact Me</h2>
+        <p>
+            If you would like to work with me or have any questions,
+            feel free to contact me using the form below or through my social links.
+        </p>
+    </section>
+
+    <section class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="contact-info">
+        <h3>Other Ways to Reach Me</h3>
+        <ul>
+            <li>Email: <a href="mailto:heinzawpaing@example.com">heinzawpaing@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></li>
+            <li>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Hein Zaw Paing</p>
+</footer>
+
 </body>
 </html>
