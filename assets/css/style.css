@@ -69,3 +69,24 @@ footer {
     background: #111;
     color: #fff;
 }
+.about {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+}
+
+.about h2, .about h3 {
+    margin-bottom: 10px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-skills ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
