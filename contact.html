@@ -8,15 +8,20 @@
 </head>
 <body>
 
-<header>
+    <header>
     <nav class="navbar">
         <h1 class="logo">Hein Zaw Paing</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 </header>
 
@@ -48,7 +53,7 @@
         <h3>Other Ways to Reach Me</h3>
         <ul>
             <li>Email: <a href="mailto:heinzawpaing40@gmail.com">heinzawpaing40@gmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/heinzawpaing53-lab" target="_blank">github.com/heinzawpaing53-lab</a></li>
+            <li>GitHub: <a href="https://github.com/heinzawpaing53-lab" target="_blank">github.com/heinzawpaing53</a></li>
             <li>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></li>
         </ul>
     </section>
@@ -57,6 +62,15 @@
 <footer>
     <p>© 2025 Hein Zaw Paing</p>
 </footer>
+<script>
+    // Mobile hamburger menu
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
 
 </body>
 </html>

@@ -11,14 +11,20 @@
 <header>
     <nav class="navbar">
         <h1 class="logo">Hein Zaw Paing</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 </header>
+
 
 <main class="about">
     <section class="about-intro">
@@ -65,6 +71,15 @@
 <footer>
     <p>© 2025 Hein Zaw Paing</p>
 </footer>
+<script>
+    // Mobile hamburger menu
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
 
 </body>
 </html>
