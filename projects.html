@@ -11,12 +11,17 @@
 <header>
     <nav class="navbar">
         <h1 class="logo">Hein Zaw Paing</h1>
-        <ul>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 </header>
 
@@ -24,8 +29,8 @@
     <section class="projects-intro">
         <h2>My Projects</h2>
         <p>
-            Below is my personal portfolio project built using pure HTML and CSS.
-            This project demonstrates clean structure, semantic HTML, and responsive design.
+            Here are some projects I have worked on while learning web development.
+            These focus on clean HTML, CSS, and responsive layouts.
         </p>
     </section>
 
@@ -34,21 +39,20 @@
         <article class="project-card">
             <h3>HTML Portfolio Website</h3>
             <p>
-                A personal portfolio website created using pure HTML and CSS.
-                It includes multiple pages such as Home, About, Projects, and Contact.
+                A clean and responsive personal portfolio website built using pure HTML and CSS.
+                Focused on semantic HTML, professional design, and responsive layout.
             </p>
-
             <p><strong>Technologies:</strong> HTML5, CSS3</p>
-
             <div class="project-links">
-                <a href="https://heinzawpaing53-lab.github.io/html-portfolio/" target="_blank">
-                    Live Demo
-                </a>
-
-                <a href="https://github.com/heinzawpaing53-lab/html-portfolio" target="_blank">
-                    GitHub Repository
-                </a>
+                <a href="https://heinzawpaing53-lab.github.io/html-portfolio/" target="_blank">Live Demo</a>
+                <a href="https://github.com/heinzawpaing53-lab/html-portfolio" target="_blank">GitHub Repo</a>
             </div>
+        </article>
+
+        <!-- Future Projects Placeholder -->
+        <article class="project-card">
+            <h3>Coming Soon</h3>
+            <p>Other projects will be added soon. Stay tuned!</p>
         </article>
 
     </section>
@@ -57,6 +61,16 @@
 <footer>
     <p>© 2025 Hein Zaw Paing</p>
 </footer>
+
+<script>
+    // Mobile hamburger menu
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
 
 </body>
 </html>
