@@ -8,14 +8,14 @@
 </head>
 <body>
 
-    <header>
+<header>
     <nav class="navbar">
         <h1 class="logo">Hein Zaw Paing</h1>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <div class="hamburger">
             <span></span>
@@ -29,41 +29,47 @@
     <section class="contact-intro">
         <h2>Contact Me</h2>
         <p>
-            If you would like to work with me or have any questions,
-            feel free to contact me using the form below or through my social links.
+            Feel free to contact me for job opportunities, collaborations,
+            or any questions related to web development.
         </p>
     </section>
 
-    <section class="contact-form">
-        <form action="#" method="post">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
     <section class="contact-info">
-        <h3>Other Ways to Reach Me</h3>
-        <ul>
-            <li>Email: <a href="mailto:heinzawpaing40@gmail.com">heinzawpaing40@gmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/heinzawpaing53-lab" target="_blank">github.com/heinzawpaing53</a></li>
-            <li>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></li>
-        </ul>
+        <div class="contact-card">
+            <h3>📞 Phone</h3>
+            <p>+95 9 779281659</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>📍 Address</h3>
+            <p>Yangon, Myanmar</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>💬 Viber</h3>
+            <p>
+                <a href="viber://chat?number=959779281659">
+                    Chat on Viber
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p>
+                <a href="mailto:heinzxawpaing40@gmail.com">
+                    heinzxawpaing40@gmail.com
+                </a>
+            </p>
+        </div>
     </section>
 </main>
 
 <footer>
     <p>© 2025 Hein Zaw Paing</p>
 </footer>
+
 <script>
-    // Mobile hamburger menu
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
 
