@@ -1,82 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Hein Zaw Paing</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Hein Zaw Paing</h1>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Hein Zaw Paing</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-<main class="contact">
-    <section class="contact-intro">
-        <h2>Contact Me</h2>
-        <p>
-            Feel free to contact me for job opportunities, collaborations,
-            or any questions related to web development.
-        </p>
-    </section>
-
-    <section class="contact-info">
-        <div class="contact-card">
-            <h3>📞 Phone</h3>
-            <p>09779281659</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>📍 Address</h3>
-            <p>Yangon, Myanmar</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>💬 Viber</h3>
+    <main class="contact">
+        <section class="contact-intro">
+            <h2>Contact Me</h2>
             <p>
-                <a href="viber://chat?number=959779281659">
-                    Chat on Viber
-                </a>
+                Feel free to contact me for job opportunities, collaborations,
+                or any questions related to web development.
             </p>
-        </div>
+        </section>
 
-        <div class="contact-card">
-            <h3>📧 Email</h3>
-            <p>
-                <a href="mailto:heinzxawpaing40@gmail.com">
-                    heinzawpaing40@gmail.com
-                </a>
-            </p>
-        </div>
-    </section>
-</main>
+        <section class="contact-info">
+            <div class="contact-card">
+                <h3>📞 Phone</h3>
+                <p>09779281659</p>
+            </div>
 
-<footer>
-    <p>© 2025 Hein Zaw Paing</p>
-</footer>
+            <div class="contact-card">
+                <h3>📍 Address</h3>
+                <p>Yangon, Myanmar</p>
+            </div>
 
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
+            <div class="contact-card">
+                <h3>💬 Viber</h3>
+                <p>
+                    <a href="viber://chat?number=959779281659">
+                        Chat on Viber
+                    </a>
+                </p>
+            </div>
 
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
-</script>
+            <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p>
+                    <a href="mailto:heinzxawpaing40@gmail.com">
+                        heinzawpaing40@gmail.com
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Hein Zaw Paing</p>
+    </footer>
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 
 </body>
+
 </html>

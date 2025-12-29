@@ -466,3 +466,11 @@ footer {
 .cert-grid img:hover {
     transform: scale(1.05);
 }
+.footer {
+    margin-top: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
