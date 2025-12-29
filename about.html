@@ -1,85 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Hein Zaw Paing</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Hein Zaw Paing</h1>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Hein Zaw Paing</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
 
-<main class="about">
-    <section class="about-intro">
-        <h2>About Me</h2>
-        <p>
-            My name is <strong>Hein Zaw Paing</strong>, and I am a junior web developer who is passionate
-            about building clean, responsive, and user-friendly websites.
-            I enjoy turning ideas into real web pages using modern and reliable web technologies.
-        </p>
-    </section>
+    <main class="about">
+        <section class="about-intro">
+            <h2>About Me</h2>
+            <p>
+                My name is <strong>Hein Zaw Paing</strong>, and I am a junior web developer who is passionate
+                about building clean, responsive, and user-friendly websites.
+                I enjoy turning ideas into real web pages using modern and reliable web technologies.
+            </p>
+        </section>
 
-    <section class="about-details">
-        <h3>What I Do</h3>
-        <p>
-            I focus on front-end development using HTML and CSS, and I also have experience working with
-            backend technologies such as PHP and Laravel.
-            I like writing clean code and following best practices to create maintainable projects.
-        </p>
-    </section>
+        <section class="about-details">
+            <h3>What I Do</h3>
+            <p>
+                I focus on front-end development using HTML and CSS, and I also have experience working with
+                backend technologies such as PHP and Laravel.
+                I like writing clean code and following best practices to create maintainable projects.
+            </p>
+        </section>
 
-    <section class="about-skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML5 & Semantic Markup</li>
-            <li>CSS3 & Responsive Design</li>
-            <li>Bootstrap</li>
-            <li>PHP</li>
-            <li>Laravel (Basic)</li>
-            <li>MySQL (Basic)</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
+        <section class="about-skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML5 & Semantic Markup</li>
+                <li>CSS3 & Responsive Design</li>
+                <li>Bootstrap</li>
+                <li>PHP</li>
+                <li>Laravel (Basic)</li>
+                <li>MySQL (Basic)</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
 
-    <section class="about-goal">
-        <h3>Career Goal</h3>
-        <p>
-            My goal is to grow as a professional web developer by working on real-world projects,
-            learning from experienced developers, and continuously improving my technical skills.
-            I am eager to join a team where I can contribute and learn at the same time.
-        </p>
-    </section>
-</main>
+        <section class="about-goal">
+            <h3>Career Goal</h3>
+            <p>
+                My goal is to grow as a professional web developer by working on real-world projects,
+                learning from experienced developers, and continuously improving my technical skills.
+                I am eager to join a team where I can contribute and learn at the same time.
+            </p>
+        </section>
 
-<footer>
-    <p>© 2025 Hein Zaw Paing</p>
-</footer>
-<script>
-    // Mobile hamburger menu
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
+        <main class="about">
 
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
-</script>
+            <section class="about-intro">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm <strong>Hein Zaw Paing</strong>, a passionate web developer learning
+                    HTML, CSS, PHP, and Laravel. I enjoy building clean, responsive, and user-friendly websites.
+                </p>
+            </section>
+
+            <section class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>Responsive Web Design</li>
+                    <li>Basic JavaScript</li>
+                    <li>PHP & Laravel (Beginner)</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </section>
+
+            <section class="certificates">
+                <h3>Certificates</h3>
+
+                <div class="certificate-grid">
+                    <div class="certificate-card">
+                        <img src="assets/images/certificates/cert1.jpg" alt="HTML Certificate">
+                        <p>HTML & CSS Certificate</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img src="assets/images/certificates/cert2.jpg" alt="Web Design Certificate">
+                        <p>Responsive Web Design</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img src="assets/images/certificates/cert3.jpg" alt="Laravel Certificate">
+                        <p>Laravel Basics</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Hein Zaw Paing</p>
+    </footer>
+    <script>
+        // Mobile hamburger menu
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 
 </body>
+
 </html>

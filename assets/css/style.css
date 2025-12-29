@@ -402,4 +402,40 @@ footer {
         padding: 1rem;
     }
 }
+/* Certificates */
+.certificates h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
 
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.certificate-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.certificate-card p {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
