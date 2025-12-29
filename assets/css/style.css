@@ -235,7 +235,7 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 4px;
+    gap: 5px;
 }
 
 .hamburger span {
@@ -488,52 +488,4 @@ footer {
     margin-right: 8px;
     color: #0088cc;
     /* Telegram blue */
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-        /* Prevent horizontal scroll */
-    }
-
-    .nav-links {
-        position: fixed;
-        /* Fixed position on screen */
-        top: 0;
-        right: -250px;
-        /* Hide menu offscreen */
-        height: 100%;
-        width: 250px;
-        /* Menu width */
-        background: #222;
-        flex-direction: column;
-        padding-top: 60px;
-        gap: 1rem;
-        transition: right 0.3s ease;
-        z-index: 999;
-        /* Above content */
-    }
-
-    .nav-links.active {
-        right: 0;
-        /* Slide in when active */
-    }
-
-    .nav-links li {
-        text-align: center;
-    }
-
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        gap: 5px;
-    }
-
-    .hamburger span {
-        width: 25px;
-        height: 3px;
-        background: #fff;
-    }
 }
