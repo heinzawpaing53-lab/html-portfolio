@@ -231,3 +231,37 @@ display:flex;
 }
 
 }
+/* ============================= */
+/* CONTACT ICON COLORS FIX */
+/* ============================= */
+
+/* Remove forced color from icons */
+.contact-card h3 i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Phone Icon */
+.fa-phone {
+    color: #4CAF50;
+}
+
+/* Address Icon */
+.fa-map-marker-alt {
+    color: #E53935;
+}
+
+/* Email Icon */
+.fa-envelope {
+    color: #1976D2;
+}
+
+/* Telegram Icon */
+.fa-telegram-plane {
+    color: #0088cc;
+}
+
+/* Viber Icon */
+.fa-viber {
+    color: #7360F2;
+}
