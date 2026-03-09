@@ -91,7 +91,54 @@
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
+
+        // Certificate Modal Functionality
+        function openModal() {
+            document.getElementById("certModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("certModal").style.display = "none";
+        }
+
+        // Add click event listeners to all certificate images
+        document.addEventListener('DOMContentLoaded', function() {
+            const certImages = document.querySelectorAll('.cert-grid img');
+            const modalImg = document.getElementById("modalImage");
+            const captionText = document.getElementById("caption");
+
+            certImages.forEach((img, index) => {
+                img.onclick = function() {
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                    openModal();
+                }
+            });
+
+            // Close modal when clicking the X or outside the image
+            document.querySelector(".close").onclick = closeModal;
+
+            document.getElementById("certModal").onclick = function(event) {
+                if (event.target === this) {
+                    closeModal();
+                }
+            }
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        });
     </script>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption" class="modal-caption"></div>
+    </div>
 
 </body>
 
